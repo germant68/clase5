@@ -1,0 +1,55 @@
+Git
+En el mundo del desarrollo se realizan cambios constantes sobre los proyectos actuales
+varias veces al dia.
+Git permite hacer un completo back-up de los archivos y compartirlos con tu equipo
+Es un software de control de versiones, que mantien eficientemente las actualizaciones
+sobre el codigo fuente
+Vas a poder tener un historal completo de versiones de un mismo archivos
+sin la necesidad de crear varias copias del mismo
+Se pueden compartir los archivos de forma facil y sencilla
+Se asemeja a google drive
+
+GitHub
+Almacenamiento en la nube. Se puede hacer lo mismo con los archivos de nuestros proyectos
+GitHub es mas funcional 
+Es un lugar en la nube, donde se hospedan los proyectos de programacion
+Podemos crear un repositorio, donde se almacenan los archivos
+1 proyecto es un repositorio
+Los repositorios que viven en GitHub son repositorios remotos
+Cada persona de tu equipo va a tener una copia de ese repositorio, a los cuales llamamos repositorios locales
+Para que git funcione bien es necesario crear un vincullo entre local y remotos
+
+
+Agregando archivos al repositorio
+Cada vez que agregamos archivos se graban en pequeños paquetes que se llaman:
+Commits: Tienen una marca de tiempo, firma del autor y asi dejan una marca de los cambios del proyecto
+Son los q nos permiten hacer un seguimiento y control sbre las versiones de nuestros archivos
+
+Como se agregan archivos al repositorio?
+Escribiendo un comando desde la terminal, (solo va a funcionar estando en una carpeta que tiene 
+un repositorio inicializado)
+comando: git add (indicarle los archivos que queremos agregar)
+git status (te dice el estado de los archivos y el estado de los mismos en orden al repositorio)
+git add nombrearchivo.js agrega un archivos
+git add . agrega todos los archivos
+
+
+commits - confirmacion a traves de la cual le decimos al repositorio q los archivos q fuimos agregando
+los deseamos oficialmente como un paquete de adiciones o modificaciones q tendran a su vez una marca indeleble
+de tiempo y estaran firmados por un autor
+
+Ejemplo: Cada vez que estamos en una instancia importante del proyecto, podemos crear un commit
+Si cometemos un error, podemos volver facilmente a la version anterior
+
+Para crear un commit hay que agregar los archivos modificados al repositorio
+y luego el comando:
+git commit - m + "un mensaje entre las comillas" (puede ser lo hecho hasta ese momento)
+
+Hasta aca, generamos un punto en la linea de tiempo de nuestro proyecto
+que tiene los archivos que hasta el momento agregaste al repositorio
+
+
+
+
+
+

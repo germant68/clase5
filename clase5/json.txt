@@ -1,0 +1,76 @@
+JSON
+En el mundo del desarrollo es muy común que nuestros sistemas consuman datos de sistemas externos. 
+Ejemplo: Si quisiéramos en nuestro sitio web dar el pronóstico del clima, existen servicios que nos pueden dar esta información
+Sin embargo, es muy probable que nuestro sistema, y el sistema que aporta esos datos no estén construidos de la misma manera.
+Por lo que compartir dicha información es algo complejo.
+Por ello, existe un formato de datos especial para compartir información
+Se llama JSON
+JAVASCRIPT
+OBJECT
+NOTATION
+
+Es un formato de texto sencillo y utilizado para el intercambio de datos entre distintos sistemas.
+Es una cadena de texto que puede ser fácilmente compartida y que todos los lenguajes de programación están en la posibilidad de interpretar.
+Un conjunto de información que viene en formato JSON al tener esta estructura se puede convertir fácilmente a un objeto literal o a un array 
+Es por ello que JS nos da un objeto nativo llamado JSON, el cual viene a su vez con dos métodos, parse y stringify
+JSON.parse() recibe como parámetro un dato y retorna el mismo en un formato array o objeto literal
+Es importante tener en cuenta que el dato suministrado tiene que ser una cadena de texto en formato JSON.
+JSON.stringify hace lo contrario, toma un array u objeto literal y lo convierte en un string del tipo JSON
+
+Son dos métodos bastante funcionales, ya que permiten tener un formato de intercambio de datos que sean sencillos de interpretar por cualquier sistema
+
+let amigos = ["Coco", "Pablito", "Mike", "Franco"];
+
+let amigosJSON = JSON.stringify(amigos);
+
+console.log(amigosJSON);
+
+let amigosOriginal = JSON.parse(amigosJSON);
+
+console.log(amigosOriginal);
+
+devuelve
+
+German@Germ□n MINGW64 ~/Desktop/PROGRAMACION FULL STACKER/CODE JV/clase5 (master)
+$ node json.js
+["Coco","Pablito","Mike","Franco"]
+[ 'Coco', 'Pablito', 'Mike', 'Franco' ]
+
+
+let personaJSON = JSON.stringify(persona);
+console.log(personaJSON);
+
+
+let personaOriginal = JSON.parse(personaJSON)
+console.log(personaOriginal);
+
+
+
+
+
+
+
+
+
+
+METODOS DE STRINGS
+
+Para JS un string es un objeto. 
+Podemos consultar propiedades y ejecutar diversos métodos. 
+Los métodos son funciones que pertenecen a un objeto
+
+.length 
+Devuelve la longitud de una cadena de texto. 
+Cuenta todos los caracteres.
+
+indexOf
+Se ejecuta sobre un string dado y recibe como parámetro una cadena de texto, la cual será buscada dentro del string que ejecuta el método
+
+Para JS la primera letra de un string siempre estará en el índice cero
+Si lo que se busca no esta en el string siempre retornara -1
+Por mas que haya mas de una coincidencia indexOf siempre va a devolver la primer coincidencia que encuentre
+
+slice
+Toma una porción determinada de una cadena de texto
+Se necesita pasar dentro de los paréntesis, dos parámetros numéricos
+El primero presenta el índice donde queres comenzar a tomar la porción de texto y el segundo, el índice hasta donde queres cortar

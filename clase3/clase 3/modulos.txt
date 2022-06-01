@@ -1,0 +1,30 @@
+SISTEMA DE MODULOS:
+
+Ejemplo: Pensemos en Wikipedia como una gran biblioteca de conocimiento, entonces podemos decir que cada uno de los documentos allí presentes es un libro. 
+Estos libros los podemos usar a nuestro antojo, ya que son de libre publicación y muchos de ellos deben haber sido creados por usuarios como nosotros.
+Algo muy parecido sucede con los módulos de node. Ya que estos mismos son el núcleo y razón por la cual node es una excelente herramienta de programación. 
+
+Que es un módulo?
+Un bloque de código reutilizable, una unidad de funcionalidad cuya existencia no altera incidentalmente el comportamiento de otros bloques de código. 
+Esto significa que al momento de programar, 
+tendrás que atomizar tu código en pequeños archivos que guarden toda la funcionalidad que estas creando para un objetivo definido. 
+Y por lo tanto, la existencia o no de dicho archivo no debería alterar la funcionalidad de toda la aplicación. 
+Node da un montón de módulos que podemos usar libremente. Algunos los podes usar sin necesidad de instalarlos y otros los podes instalar a traves de npm.
+Si queres ver cuáles son los módulos nativos que vienen con node:
+https://www.nodejs.org/api
+
+Como usar un módulo en mi aplicación?
+Lo primero que hay que hacer, después de haber inicializado un proyecto de node, es crear el ARCHIVO DE ENTRADA a tu aplicación. 
+Es un archivo con extensión .js que normalmente recibe el nombre de app.js
+Sera el punto de entrada o entry point, que node tomara para comenzar a ejecutar toda tu aplicación. 
+Como segundo paso, tendrás que requerir el modulo que deseas dentro del archivo de entrada y para ello vas a usar la función nativa de node require ()
+Esta función toma como parámetro un string, que será exactamente el nombre del módulo a requerir. 
+Esta función require, retorna algo y deberá ser almacenado en una variable. 
+De esta manera, vas a poder tener a mano, en la variable creada, toda la funcionalidad del módulo que requeriste
+Es decir, utilizaremos el modulo, a través de esta variable
+Como funciona por detrás un módulo y el require?
+Lo que tenes que tener en cuenta, es que al invocar el modulo con require, se genera un objeto literal en esa variable.
+Por lo tanto, tendrá muchas propiedades y métodos disponibles para usar.
+Para ver todas las cosas que trae consigo un módulo es un console.log de la variable a la que asignaste el require 
+
+Supongamos que tenemos un archivo de texto, prueba.txt, 
